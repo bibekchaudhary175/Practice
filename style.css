@@ -1,0 +1,228 @@
+* {
+      box-sizing: border-box;
+    }
+.header
+{
+      background: #D9D9D9;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between; 
+      position: fixed;
+      width: 1536px;
+      height: 100px;
+      gap: 0px;
+      opacity: 0.79px;
+
+}
+
+.header #logo
+{
+      text-align: center;
+      display: flex;
+}
+ #logo a img
+{
+      height: 48px;
+      width: 180px;
+      margin: 23px;
+}
+.header ul
+{
+      list-style: none;
+      float: right;
+}
+
+.header ul li
+{
+     
+     float: left;
+      
+}
+.header ul li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      margin: 15px;
+      font-size: 25px;
+  }
+
+  .header .dropbtn
+  {
+      margin: 25px;
+      width:310px;
+      height: 46px;
+      border: 0 solid;
+      border-radius: 20px;
+      background-color: rgb(83, 83, 192);
+      text-align: center;
+  }
+
+.m1
+{
+      width: 100%;
+      height: 850px;
+      left: -32px;
+      gap: 0px;
+      border-radius: 0px 0px 10px 0px;
+      opacity: 0px;
+      background: url(Rectangle.png);
+}
+
+.main #content
+{
+      color: white;
+      padding-top:180px;
+      margin-left: 144px;
+      width: 23%;
+      justify-content: center;
+      font-size: 40px;
+}
+
+.main #content button
+{
+      background-color: rgb(83, 83, 192);
+      border: 0 solid;
+      border-radius: 30px;
+      margin-top: 25px; 
+}
+
+.main #content button #c1
+{
+      padding: 7px;
+      color: white;
+      align-items: center;
+      margin: 0px;
+}
+
+.main1
+{
+width: 1330px;
+height: 150px;
+top: 473px;
+margin-left: 88px;
+gap: 0px;
+border: 0px solid;
+border-radius: 10px;
+opacity: 0px;
+background: #FFFFFF;
+margin-top: 150px;
+color:black;
+overflow: hidden;
+}
+.main1 .bar
+{
+      display: block;
+      width:100px;
+      padding-top:48px;
+      margin-left:0px;
+}
+.bar h1
+{
+      width:130px;
+      font-family: Open Sans;
+      text-align: center;
+      font-size: 15px;
+      font-weight: 400px;
+      line-height: 18px;
+}
+
+.bar .inner-bar
+{
+      background: #DFDFDF;
+      width:200px;
+      height: 43px;
+      padding: 12px;
+      border: 0px solid;
+      border-radius: 8px;
+      text-align: left;
+      margin-left: 40px;
+      font-family: Open Sans;
+      font-size: 15px;
+}
+
+.card{
+      outline: none;
+}
+
+
+.card h3
+{
+      font-family: Open Sans;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 38.4px;
+      text-align: center;
+      color:#141414;
+      margin-top: 10px;
+}
+
+.card .card1
+{
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 75px;
+      margin-bottom: 60px;
+      margin-top: 10px;
+}
+
+.card1 #inner-card
+{
+      height: 418px;
+      border: 2px solid gray;
+      border-radius: 20px;
+      width: 390px;
+      margin-right: 10px;
+}
+
+.card1 #inner-card a img
+{
+      width:384px;
+      height: 335px;
+      padding: 15px 12px 15px 15px;
+      border-radius: 18px;
+}
+
+
+.card1 #inner-card #card-content
+{
+      
+      font-family: Open Sans;
+      padding: 0px 50px;
+      width:100%;
+      font-size: 15px;
+      text-align: center;
+}
+
+.footer
+{
+      margin-top: 1px;
+      border-top: 2px solid rgba(0, 0, 255,0.6);
+      height: 250px;
+}
+
+.footer .section1
+{
+      width:15%;
+      display: block;
+}
+.footer a img
+{
+      width: 180px;
+      height: 48px;
+      margin:42px 0px 0px 20px;
+}
+
+.footer .section2
+{
+      margin-top: 80px;
+}
+.footer .section3
+{
+      margin-top: -225px;
+      float: right;
+      padding-right:50px ;
+}
