@@ -1,4 +1,4 @@
-* {
+      * {
       box-sizing: border-box;
     }
 .header
@@ -100,7 +100,7 @@
 
 .main1
 {
-width: 1330px;
+width: 1350px;
 height: 150px;
 top: 473px;
 margin-left: 88px;
@@ -110,38 +110,139 @@ border-radius: 10px;
 opacity: 0px;
 background: #FFFFFF;
 margin-top: 150px;
-color:black;
 overflow: hidden;
 }
+.togglebutton
+{
+      display:flex;
+      justify-content: center;
+}
+.main1 .togglebutton .switch 
+{
+      position: relative;
+      display: inline-block;
+      width: 65px;
+      height: 34px;
+      margin-top: 50px;
+}
+
+.switch input { 
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 34px;
+      background-color: #DFDFDF;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+
+.slider:before {
+      position: absolute;
+      content: "";
+      height: 26px;
+      width: 26px;
+      left: 4px;
+      bottom: 4px;
+      border-radius: 50%;
+      background-color:rgb(83, 83, 192) ;
+      -webkit-transition: .4s;
+      transition: .4s;
+}
+input:checked + .slider {
+      background-color: red;
+    }
+
+input:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+
 .main1 .bar
 {
-      display: block;
+      display: flex;
+      justify-content: space-between;
+      gap:70px;
       width:100px;
-      padding-top:48px;
-      margin-left:0px;
+      margin-left:30px;
+      margin-top: -20px;
 }
-.bar h1
+.main1 .bar  label
 {
+      display: flex;
       width:130px;
       font-family: Open Sans;
-      text-align: center;
-      font-size: 15px;
+      text-align: left;
+      font-size: 12px;
       font-weight: 400px;
       line-height: 18px;
+      margin-left: 10px;
 }
 
 .bar .inner-bar
 {
+      display: flex;
       background: #DFDFDF;
-      width:200px;
-      height: 43px;
+      width:175px;
+      height: 40px;
       padding: 12px;
       border: 0px solid;
       border-radius: 8px;
-      text-align: left;
-      margin-left: 40px;
+      text-align: left;  
+      font-family: Open Sans;
+      font-size: 12px;
+}
+
+.bar .select select
+{
+      display: flex;
+      background: #DFDFDF;
+      width:120px;
+      height: 40px;
+      padding: 12px;
+      border: 0px solid;
+      border-radius: 8px;
+      text-align: left;  
+      font-family: Open Sans;
+      font-size: 12px;   
+}
+.bar input[type="button"]
+{
+      background-color:rgb(83, 83, 192);
+      border: 0px solid;
+      border-radius: 25px;
       font-family: Open Sans;
       font-size: 15px;
+      width:127px;
+      height: 40px;
+      color: white;
+      margin-top: 15px;
+      
+}
+.main1 input[type="checkbox"]
+{
+      float:right;
+      margin-top: 2px;
+      margin-right:165px;
+      
+}
+
+.main1 h4
+{
+      float:right;
+      margin-top:-2px;
+      margin-right: -75px;
+      font-size: 15px;
+      font-family: Open sans;
 }
 
 .card{
@@ -201,13 +302,15 @@ overflow: hidden;
 {
       margin-top: 1px;
       border-top: 2px solid rgba(0, 0, 255,0.6);
-      height: 250px;
+      height: 300px;
+      display: flex;
+      justify-content: space-between;
+      font-family: Open Sans;
 }
 
 .footer .section1
 {
-      width:15%;
-      display: block;
+      width:15%;   
 }
 .footer a img
 {
@@ -218,11 +321,39 @@ overflow: hidden;
 
 .footer .section2
 {
-      margin-top: 80px;
+      margin: 260px 0px 0px 60px;
+      
 }
-.footer .section3
+
+.footer .section3 .s3
 {
-      margin-top: -225px;
-      float: right;
-      padding-right:50px ;
+     font-size: 18px;
+     width:101px;
+     height: 34px;
+     border: 1px solid black;
+     border-radius: 23px;
+     text-align: center;
+     padding-top: 3.5px;
+     margin-top: 30px;
+     
 }
+ .section3 ul
+ {
+      list-style: none;
+      margin-left: -35px;
+      font-size:18px;
+      margin-top: 10px;
+ }
+ 
+ .footer .section4 .s4
+ {
+      font-size: 18px;
+      width:95px;
+      height: 34px;
+      border: 1px solid black;
+      border-radius: 23px;
+      margin: 30px 150px 0px -200px;
+      text-align: center;
+      padding:4px;
+      
+ }
