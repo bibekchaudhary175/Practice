@@ -6,23 +6,15 @@
       background: #D9D9D9;
       margin: 0;
       padding: 0;
-      overflow: hidden;
       display: flex;
       justify-content: space-between; 
-      position: fixed;
-      width: 1536px;
-      height: 100px;
-      gap: 0px;
-      opacity: 0.79px;
-
+      width: 1519px;
+      height: 105px;
+      align-items: center;
 }
 
-.header #logo
-{
-      text-align: center;
-      display: flex;
-}
- #logo a img
+
+ .logo a img
 {
       height: 48px;
       width: 180px;
@@ -31,34 +23,55 @@
 .header ul
 {
       list-style: none;
-      float: right;
+      display: flex;
+      justify-content: space-around;
+      margin-right: -450px ;
+      margin-top:23px;
 }
 
-.header ul li
-{
-     
-     float: left;
-      
-}
 .header ul li a {
-      display: block;
+      
       color: black;
-      text-align: center;
-      padding: 14px 16px;
+      padding: 0px 16px;
       text-decoration: none;
-      margin: 15px;
-      font-size: 25px;
+      font-size: 20px;
+      
   }
 
   .header .dropbtn
   {
-      margin: 25px;
-      width:310px;
-      height: 46px;
-      border: 0 solid;
-      border-radius: 20px;
+      width:290px;
+      height: 47px;
+      margin-right: 33px;
+      border: 0px solid;
+      border-radius: 25px;
       background-color: rgb(83, 83, 192);
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      padding:8px;
+      align-items: center;
+  }
+  .header .dropbtn .button
+  {
+      
+      height: 45px;
+      background-color: transparent;
+      font-size: 16px;
+      font-family: Open sans;
+      color: white;     
+  }
+.dropbtn .dropbtn__button1
+  {
+      width: 155px;
+      border:none;
+      border-right:1px solid white;
+      text-align: left;
+  }
+  .dropbtn .dropbtn__button2
+  {
+      width:121px;
+      border:none;
+      border-radius: 0px 10px 10px 1px;;
   }
 
 .m1
@@ -67,9 +80,9 @@
       height: 850px;
       left: -32px;
       gap: 0px;
-      border-radius: 0px 0px 10px 0px;
+      border-radius: 0px 0px 50px 50px;
       opacity: 0px;
-      background: url(Rectangle.png);
+      background: url('../Image/Rectangle.png');
 }
 
 .main #content
@@ -116,14 +129,25 @@ overflow: hidden;
 {
       display:flex;
       justify-content: center;
+      
+}
+.togglebutton .__togglebutton_text
+{
+      font-family: open Sans; 
+      font-size:12px ;
+      width: 75px;
+      padding:6px;
+      margin-left: 10px;
+
 }
 .main1 .togglebutton .switch 
 {
       position: relative;
       display: inline-block;
-      width: 65px;
+      width: 70px;
       height: 34px;
-      margin-top: 50px;
+      margin-top: 23px;
+      margin-left: -75px;;
 }
 
 .switch input { 
@@ -132,7 +156,7 @@ overflow: hidden;
       height: 0;
     }
 
-    .slider {
+.slider {
       position: absolute;
       cursor: pointer;
       top: 0;
@@ -158,8 +182,9 @@ overflow: hidden;
       transition: .4s;
 }
 input:checked + .slider {
-      background-color: red;
+      background-color: #DFDFDF;
     }
+
 
 input:checked + .slider:before {
       -webkit-transform: translateX(26px);
@@ -174,7 +199,7 @@ input:checked + .slider:before {
       gap:70px;
       width:100px;
       margin-left:30px;
-      margin-top: -20px;
+      margin-top: -2px;
 }
 .main1 .bar  label
 {
@@ -245,9 +270,6 @@ input:checked + .slider:before {
       font-family: Open sans;
 }
 
-.card{
-      outline: none;
-}
 
 
 .card h3
@@ -266,38 +288,53 @@ input:checked + .slider:before {
       display: flex;
       justify-content: space-between;
       padding: 0px 75px;
-      margin-bottom: 60px;
+      margin-bottom: 90px;
       margin-top: 10px;
+      align-items: center;
 }
 
-.card1 #inner-card
+.card1 .inner-card
 {
-      height: 418px;
-      border: 2px solid gray;
+      height: 452px;
+      width: 394px;
+      border: 1.6px solid rgba(0,0,0,0.55);
       border-radius: 20px;
-      width: 390px;
-      margin-right: 10px;
+      justify-content: center;
+      display: inline;
+      padding: 15px 10px 15px 15px;
 }
 
-.card1 #inner-card a img
+.card1 .inner-card .__inner-card
 {
-      width:384px;
-      height: 335px;
-      padding: 15px 12px 15px 15px;
-      border-radius: 18px;
+      border: 1.6px solid rgba(0,0,0,0.8);
+      height: 345px;
+      width: 360px;
+      border-radius: 20px;
+      margin: 0px 0px 10px 0px;
+      padding:0px;
+      position: relative;
+      overflow: hidden;
+      align-items: center;
+}
+
+.card1 .inner-card a img
+{
+      width:360px;
+      height: 345px;
+      
 }
 
 
-.card1 #inner-card #card-content
+.card1 .inner-card .card-content
 {
       
       font-family: Open Sans;
       padding: 0px 50px;
-      width:100%;
+      width:240px;
       font-size: 15px;
       text-align: center;
+      margin-left: 67px;
 }
-
 .footer
 {
       margin-top: 1px;
@@ -321,7 +358,7 @@ input:checked + .slider:before {
 
 .footer .section2
 {
-      margin: 260px 0px 0px 60px;
+      margin: 260px 0px 0px 130px;
       
 }
 
